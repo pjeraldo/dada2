@@ -192,7 +192,7 @@ Rcpp::LogicalVector C_isACGT(std::vector<std::string> seqs) {
     strlen = seqs[i].length();
     cstr = seqs[i].c_str();
     for(pos=0; pos<strlen; pos++) {
-      if(!(cstr[pos] == 'A' || cstr[pos] == 'C' || cstr[pos] == 'G' || cstr[pos] == 'T')) {
+      if(!(cstr[pos] == 'A' || cstr[pos] == 'C' || cstr[pos] == 'G' || cstr[pos] == 'T' || cstr[pos] == 'N')) {
         justACGT = false;
         break;
       }
